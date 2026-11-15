@@ -4,13 +4,16 @@
 #২. Slicing ব্যবহার করে প্রথম ৬টি অক্ষর ("OpenAI") এবং শেষের ৪টি অক্ষর ("GPT4") আলাদা দুটি ভেরিয়েবলে রাখুন।
 #৩. f-string ব্যবহার করে এক লাইনে কোম্পানির নাম, মডেলের নাম এবং দশমিকের পর ২ ঘর পর্যন্ত অ্যাকুরেসি প্রিন্ট করুন।
 
-AI_Name="   OpenAI-GPT4   "
+AI_Name="   OpenAI-GPT6   "
 accuracy=96.789
 
 Space_Remove=AI_Name.strip()
 Word1=Space_Remove[0:6]
 Word2=Space_Remove[7:11]
 
+
+result=f"AI-Name: {Space_Remove} | Company:{Word1} | Model:{Word2} | Accuracy:{accuracy:.2f}%"
+print(result)
 print(Space_Remove)
 print(Word1)
 print(Word2)
