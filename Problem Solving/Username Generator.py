@@ -28,3 +28,22 @@ year=str(birth_year)[-2:]
 final_username=semihalfdone_name+semihalfdone_name2+year
 
 print(final_username)
+
+#----------SHORT CUT----------
+# ১. সবচেয়ে সহজ ও ক্লিন উপায় (Recommended)-
+
+full_name = input("Enter Your Name:")
+birth_year = input("Enter Your Birth Year:")
+
+name=full_name.strip().lower()
+final_name=f"{name[0:3]}{name[-2:]}{str(birth_year)[-2:]}"
+print(final_name)
+
+# ২. মাত্র এক লাইনে করতে চাইলে
+# যদি name ভ্যারিয়েবলটিও রাখতে না চান, তবে সরাসরি এভাবেও লিখতে পারেন:
+
+full_name = "    Khalid Malid    "
+birth_year = 1999
+
+user_name=f"{full_name.strip().lower()[0:3]}{full_name.strip().lower()[-2:]}{str(birth_year)[-2:]}"
+print(user_name)
