@@ -16,3 +16,7 @@ password="Dhaka@2026"
 pass_test1=len(password)>=8 and ("@" in password or "#" in password) and "123" not in password
 print("Is Password Strong:",pass_test1)
 
+if pass_test1:
+    print("Password is Strong")
+else:
+    print("Password is Not Strong")
